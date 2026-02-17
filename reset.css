@@ -14,7 +14,7 @@
 }
 
 :where(*:not(dialog)) {
-  margin: 0;
+	margin: 0;
 }
 
 :where(html) {
@@ -51,23 +51,23 @@
 }
 
 :where(a) {
-  text-decoration-skip-ink: auto;
-  text-underline-offset: 0.2ex;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 0.2ex;
 }
 
 :where(sup, sub) {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 }
 
-:where(sup) { 
-	top: -0.5em; 
+:where(sup) {
+	top: -0.5em;
 }
 
-:where(sub) { 
-	bottom: -0.25em; 
+:where(sub) {
+	bottom: -0.25em;
 }
 
 /* Typography styles for unclassed elements only */
@@ -115,7 +115,7 @@
 }
 
 :where(textarea, select, input) {
-	field-sizing: content; 
+	field-sizing: content;
 	max-inline-size: 100%;
 }
 
@@ -124,47 +124,47 @@
 }
 
 :where(button) {
-  padding: 0;
-  border: 0;
-  background: none;
-  cursor: pointer;
+	padding: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
 }
 
 :where(button:disabled) {
-  cursor: not-allowed;
+	cursor: not-allowed;
 }
 
 :where(table) {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* --- 5. Utilities & Accessibility --- */
 
 :where(::selection) {
-  background-color: color-mix(in srgb, currentColor, transparent 70%);
-  text-shadow: none;
+	background-color: color-mix(in srgb, currentColor, transparent 70%);
+	text-shadow: none;
 }
 
 :where(:target) {
-  scroll-margin-top: 2rem;
+	scroll-margin-top: 2rem;
 }
 
 /* Framework-specific isolation */
 :where(#root, #__next) {
-  isolation: isolate;
+	isolation: isolate;
 }
 
 /* Smooth auto-height animations */
 @media (prefers-reduced-motion: no-preference) {
 	:where(html) {
 		interpolate-size: allow-keywords;
-  }
+	}
 }
 
 /* Mobile-specific optimizations */
 @media (hover: none) {
-  :where(html) {
-    -webkit-tap-highlight-color: transparent;
-  }
+	:where(html) {
+		-webkit-tap-highlight-color: transparent;
+	}
 }
