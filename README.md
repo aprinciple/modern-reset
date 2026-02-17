@@ -41,17 +41,19 @@ Every rule in `modern-reset` is wrapped in `:where()`. This ensures that any sel
 
 **Via CDN (JSDelivr):**
 
+[![JSDelivr](https://img.shields.io/jsdelivr/gh/hm/aprinciple/modern-reset?color=ff5627&label=CDN&logo=jsdelivr&logoColor=white)](https://www.jsdelivr.com/package/gh/aprinciple/modern-reset)
+
 ```html
-<!-- Minified (Recommended for Production) -->
+<!-- Production (Minified) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aprinciple/modern-reset/reset.min.css">
 
-<!-- Full version (Best for Development) -->
+<!-- Development (Full) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aprinciple/modern-reset/reset.css">
 ```
 
 **Via CSS Import:**
 ```css
-@import "modern-reset.css";
+@import "reset.css";
 ```
 
 ---
