@@ -13,12 +13,11 @@
 	box-sizing: border-box;
 }
 
-:where(*:not(dialog)) {
+:where(*:not(dialog, [popover])) {
 	margin: 0;
 }
 
 :where(html) {
-	scroll-behavior: smooth;
 	scrollbar-gutter: stable;
 	color-scheme: light dark;
 	-webkit-text-size-adjust: none;
@@ -70,6 +69,21 @@
 	bottom: -0.25em;
 }
 
+:where(hr) {
+	border: none;
+	border-block-start: 1px solid;
+	color: inherit;
+}
+
+:where(abbr[title]) {
+	text-decoration: underline dotted;
+	cursor: help;
+}
+
+:where(code, kbd, samp, pre) {
+	font-size: 0.875em;
+}
+
 /* Typography styles for unclassed elements only */
 :not([class]) {
 	&:where(h1, h2, h3, h4, h5, h6) {
@@ -97,12 +111,11 @@
 :where(img, picture, video, canvas, svg) {
 	display: block;
 	max-inline-size: 100%;
-	height: auto;
+	block-size: auto;
 }
 
 :where(img) {
 	font-style: italic;
-	shape-margin: 0.75rem;
 }
 
 /* --- 4. Forms & Interactive --- */
@@ -139,12 +152,11 @@
 	border-spacing: 0;
 }
 
-/* --- 5. Utilities & Accessibility --- */
-
-:where(::selection) {
-	background-color: color-mix(in srgb, currentColor, transparent 70%);
-	text-shadow: none;
+:where(dialog) {
+	color: inherit;
 }
+
+/* --- 5. Utilities & Accessibility --- */
 
 :where(:target) {
 	scroll-margin-top: 2rem;
@@ -155,9 +167,10 @@
 	isolation: isolate;
 }
 
-/* Smooth auto-height animations */
+/* Smooth scrolling & auto-height animations */
 @media (prefers-reduced-motion: no-preference) {
 	:where(html) {
+		scroll-behavior: smooth;
 		interpolate-size: allow-keywords;
 	}
 }

@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2026-02-17
+### Added
+- Normalization for `hr`, `abbr[title]`, `code/kbd/samp/pre`.
+- `[popover]` exclusion from margin reset alongside `dialog`.
+- `dialog` color inheritance for dark theme compatibility.
+
+### Changed
+- Moved `scroll-behavior: smooth` inside `prefers-reduced-motion` media query (A11Y).
+- Replaced `height: auto` with `block-size: auto` for full logical properties consistency.
+
+### Removed
+- `shape-margin` from `img` (decorative, belongs in design system).
+- `::selection` styles (project-specific, not a reset concern).
+
 ## [1.0.2] - 2026-02-17
 ### Added
 - Professional documentation badges (NPM, MIT, Bundle Size) in `README.md`.
