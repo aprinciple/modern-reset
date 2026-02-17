@@ -1,0 +1,170 @@
+/*!
+ * modern-reset
+ * Advanced, zero-specificity CSS reset
+ * Author: https://github.com/aprinciple
+ * License: MIT
+ */
+
+/* --- 1. Base & Layout --- */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:where(*:not(dialog)) {
+  margin: 0;
+}
+
+:where(html) {
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+	color-scheme: light dark;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	overflow-x: clip;
+}
+
+:where(body) {
+	max-inline-size: 100%;
+	min-block-size: 100dvh;
+	line-height: 1.5;
+}
+
+/* --- 2. Typography --- */
+
+:where(h1, h2, h3, h4, h5, h6) {
+	text-wrap: balance;
+	overflow-wrap: break-word;
+}
+
+:where(p) {
+	text-wrap: pretty;
+	overflow-wrap: break-word;
+}
+
+:where(ol, ul) {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+:where(a) {
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.2ex;
+}
+
+:where(sup, sub) {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+:where(sup) { 
+	top: -0.5em; 
+}
+
+:where(sub) { 
+	bottom: -0.25em; 
+}
+
+/* Typography styles for unclassed elements only */
+:not([class]) {
+	&:where(h1, h2, h3, h4, h5, h6) {
+		margin-block: 0.75em;
+		line-height: 1.25;
+		letter-spacing: -0.025ch;
+	}
+
+	&:where(p, ol, ul) {
+		margin-block: 1em;
+	}
+
+	&:where(ol, ul) {
+		list-style: revert;
+		padding-inline-start: 1.5em;
+	}
+
+	&:where(li) {
+		margin-block: 0.5em;
+	}
+}
+
+/* --- 3. Media & Assets --- */
+
+:where(img, picture, video, canvas, svg) {
+	display: block;
+	max-inline-size: 100%;
+	height: auto;
+}
+
+:where(img) {
+	font-style: italic;
+	shape-margin: 0.75rem;
+}
+
+/* --- 4. Forms & Interactive --- */
+
+:where(input, button, textarea, select) {
+	font: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	color: currentColor;
+}
+
+:where(textarea, select, input) {
+	field-sizing: content; 
+	max-inline-size: 100%;
+}
+
+:where(textarea) {
+	resize: vertical;
+}
+
+:where(button) {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+:where(button:disabled) {
+  cursor: not-allowed;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --- 5. Utilities & Accessibility --- */
+
+:where(::selection) {
+  background-color: color-mix(in srgb, currentColor, transparent 70%);
+  text-shadow: none;
+}
+
+:where(:target) {
+  scroll-margin-top: 2rem;
+}
+
+/* Framework-specific isolation */
+:where(#root, #__next) {
+  isolation: isolate;
+}
+
+/* Smooth auto-height animations */
+@media (prefers-reduced-motion: no-preference) {
+	:where(html) {
+		interpolate-size: allow-keywords;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (hover: none) {
+  :where(html) {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

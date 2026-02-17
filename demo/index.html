@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modern-reset Demo</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin-inline: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-block-end: 4rem;
+    }
+    .demo-box {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-block-end: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>modern-reset Demo</h1>
+    <p>Testing unclassed elements with zero-specificity reset.</p>
+  </header>
+
+  <section>
+    <h2>1. Typography</h2>
+    <h1>Heading Level 1</h1>
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+    <p>This is a paragraph with <strong>strong text</strong> and <em>italic text</em>. It should have a balanced text-wrap and look clean. Here is a <a href="#">link to nowhere</a> to test the underline offset.</p>
+    <p>Subscript: H<sub>2</sub>O. Superscript: E = mc<sup>2</sup>. These should not break the vertical rhythm.</p>
+  </section>
+
+  <section>
+    <h2>2. Lists</h2>
+    <ul>
+      <li>First unordered item</li>
+      <li>Second item with <code>code</code></li>
+      <li>Third item</li>
+    </ul>
+    <ol>
+      <li>First ordered item</li>
+      <li>Second ordered item</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>3. Forms (Modern field-sizing)</h2>
+    <div class="demo-box">
+      <label for="text">Auto-expanding Input:</label><br>
+      <input type="text" id="text" placeholder="Type something long..."><br><br>
+      
+      <label for="area">Auto-expanding Area:</label><br>
+      <textarea id="area" placeholder="Enter multi-line text..."></textarea><br><br>
+      
+      <button type="submit">Standard Button</button>
+      <button type="button" disabled>Disabled Button</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Tables</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Support</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Zero Specificity</td>
+          <td>100%</td>
+          <td>✅ Global</td>
+        </tr>
+        <tr>
+          <td>Defensive CSS</td>
+          <td>100%</td>
+          <td>✅ Active</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 modern-reset by <a href="https://github.com/aprinciple">Alexander Principle</a></p>
+  </footer>
+</body>
+</html>
