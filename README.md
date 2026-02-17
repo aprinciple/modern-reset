@@ -2,6 +2,10 @@
 
 **The definitive zero-specificity CSS reset and normalization layer for the 2026 modern web.**
 
+[![NPM Version](https://img.shields.io/npm/v/@aprinciple/modern-reset?color=ff5627&logo=npm)](https://www.npmjs.com/package/@aprinciple/modern-reset)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Minified Size](https://img.shields.io/bundlephobia/min/@aprinciple/modern-reset?color=green&label=minified&logo=files)](https://bundlephobia.com/package/@aprinciple/modern-reset)
+
 `modern-reset` is a high-performance, accessibility-first foundation designed to eliminate cross-browser inconsistencies while maintaining a specificity of 0. It bridges the gap between traditional `normalize.css` and the advanced requirements of modern layouts like React, Next.js, and fluid-first responsive design.
 
 ---
@@ -19,6 +23,8 @@ In 2026, old-school resets are no longer enough. `modern-reset` solves the "Hidd
 | **Frameworks** | `isolation: isolate` on roots (#root, #__next). | Z-index bugs and stacking context leaks. |
 | **Modern UX** | `field-sizing: content` & `interpolate-size`. | Requires JS for auto-expanding textareas. |
 | **Typography** | `text-wrap: balance/pretty` & `ex` scaling. | "Widows" in headers and broken font rhythm. |
+| **Logical Style** | `max-inline-size` & `min-block-size` (dvh). | Hardcoded px/vh values that break on mobile. |
+| **Scroll Sync** | `scrollbar-gutter: stable` & `scroll-behavior`. | Layout "jitter" when scrollbars appear/disappear. |
 
 ---
 
