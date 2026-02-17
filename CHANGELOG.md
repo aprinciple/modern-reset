@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-02-17
+### Added
+- Professional documentation badges (NPM, MIT, Bundle Size) in `README.md`.
+- Enriched feature comparison table (Logical Properties, Scrollbar Stability, Framework Isolation).
+
 ## [1.0.1] - 2026-02-17
 ### Fixed
 - Corrected `README.md` features table (removed inaccurate `aspect-ratio` mention).
