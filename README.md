@@ -15,6 +15,8 @@ In 2026, old-school resets are no longer enough. `modern-reset` solves the "Hidd
 | **Specificity** | **0 (Zero)** — uses `:where()` everywhere. | High — you have to fight to override. |
 | **Layout Safety** | `scrollbar-gutter: stable` & `overflow-x: clip`. | Content jumps when scrollbars appear. |
 | **Resilient Media** | `display: block` & `max-inline-size: 100%`. | Images cause layout shifts and overflow. |
+| **Micro-Typo** | `text-underline-offset` & `text-decoration-skip-ink`. | "Messy" underlines that cross through letters. |
+| **Frameworks** | `isolation: isolate` on roots (#root, #__next). | Z-index bugs and stacking context leaks. |
 | **Modern UX** | `field-sizing: content` & `interpolate-size`. | Requires JS for auto-expanding textareas. |
 | **Typography** | `text-wrap: balance/pretty` & `ex` scaling. | "Widows" in headers and broken font rhythm. |
 
