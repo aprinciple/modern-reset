@@ -1,8 +1,14 @@
 {
-	"name": "modern-reset",
+	"name": "@aprinciple/modern-reset",
 	"version": "1.0.0",
 	"description": "The definitive zero-specificity CSS reset and normalization layer for the modern web (2026+).",
 	"main": "reset.css",
+	"files": [
+		"reset.css",
+		"reset.min.css",
+		"LICENSE",
+		"README.md"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/aprinciple/modern-reset.git"

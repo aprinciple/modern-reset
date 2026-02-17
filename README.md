@@ -39,29 +39,42 @@ Every rule in `modern-reset` is wrapped in `:where()`. This ensures that any sel
 
 ## 📦 Installation & Usage
 
+**Package Managers:**
+
+```bash
+# npm
+npm install @aprinciple/modern-reset
+
+# bun
+bun add @aprinciple/modern-reset
+
+# pnpm
+pnpm add @aprinciple/modern-reset
+```
+
 **Via CDN (JSDelivr):**
 
 [![JSDelivr](https://img.shields.io/jsdelivr/gh/hm/aprinciple/modern-reset?color=ff5627&label=CDN&logo=jsdelivr&logoColor=white)](https://www.jsdelivr.com/package/gh/aprinciple/modern-reset)
 
 ```html
 <!-- Production (Minified) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aprinciple/modern-reset/reset.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aprinciple/modern-reset/reset.min.css">
 
 <!-- Development (Full) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aprinciple/modern-reset/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aprinciple/modern-reset/reset.css">
 ```
 
 **Via CSS Import:**
 
 ```css
-/* Local usage (Development) */
-@import "reset.css";
+/* Local usage (NPM / Development) */
+@import "@aprinciple/modern-reset/reset.css";
 
-/* Local usage (Production minified) */
-@import "reset.min.css";
+/* Local usage (NPM / Production) */
+@import "@aprinciple/modern-reset/reset.min.css";
 
 /* CDN usage (Production) */
-@import url("https://cdn.jsdelivr.net/gh/aprinciple/modern-reset/reset.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@aprinciple/modern-reset/reset.min.css");
 ```
 
 ---
