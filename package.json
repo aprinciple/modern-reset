@@ -1,6 +1,6 @@
 {
 	"name": "@aprinciple/modern-reset",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "The definitive zero-specificity CSS reset and normalization layer for the modern web (2026+).",
 	"main": "reset.css",
 	"files": [

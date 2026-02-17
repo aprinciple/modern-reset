@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2026-02-17
+### Fixed
+- Corrected `README.md` features table (removed inaccurate `aspect-ratio` mention).
+- Build optimization: confirmed scoped package configuration.
+
 ## [1.0.0] - 2026-02-17
 ### Added
 - Initial release of `modern-reset`.
