@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2026-02-18
+### Added
+- New demo section "Visual Assets" for testing image block-level and responsiveness.
+- Improved "Lists with Classes" section in demo for clear side-by-side comparison.
+
 ## [1.0.3] - 2026-02-17
 ### Added
 - Normalization for `hr`, `abbr[title]`, `code/kbd/samp/pre`.
