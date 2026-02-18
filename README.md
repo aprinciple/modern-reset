@@ -72,17 +72,39 @@ pnpm add @aprinciple/modern-reset
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aprinciple/modern-reset/reset.css">
 ```
 
+**Via JS/TS Import (Recommended for Bundlers):**
+
+```typescript
+// Imports reset.css automatically via index.js
+import "@aprinciple/modern-reset";
+
+// Or import specific versions
+import "@aprinciple/modern-reset/reset.css";
+import "@aprinciple/modern-reset/reset.min.css";
+```
+
 **Via CSS Import:**
 
 ```css
-/* Local usage (NPM / Development) */
-@import "@aprinciple/modern-reset/reset.css";
+/* Modern module resolution */
+@import "@aprinciple/modern-reset";
 
-/* Local usage (NPM / Production) */
+/* Explicit paths */
+@import "@aprinciple/modern-reset/reset.css";
 @import "@aprinciple/modern-reset/reset.min.css";
 
 /* CDN usage (Production) */
 @import url("https://cdn.jsdelivr.net/npm/@aprinciple/modern-reset/reset.min.css");
+```
+
+---
+
+## 🟦 TypeScript Support
+
+`modern-reset` comes with built-in type definitions. It is designed to be used as a **side-effect import**, which is the standard for CSS resets.
+
+```typescript
+import "@aprinciple/modern-reset";
 ```
 
 ---

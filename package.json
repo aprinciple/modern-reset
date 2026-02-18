@@ -1,11 +1,26 @@
 {
 	"name": "@aprinciple/modern-reset",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "The definitive zero-specificity CSS reset and normalization layer for the modern web (2026+).",
-	"main": "reset.css",
+	"main": "index.js",
+	"style": "reset.css",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"style": "./reset.css",
+			"import": "./index.js",
+			"require": "./index.js",
+			"default": "./reset.css"
+		},
+		"./reset.css": "./reset.css",
+		"./reset.min.css": "./reset.min.css"
+	},
 	"files": [
 		"reset.css",
 		"reset.min.css",
+		"index.js",
+		"index.d.ts",
 		"LICENSE",
 		"README.md"
 	],

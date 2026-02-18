@@ -1,6 +1,12 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+ 
+## [1.0.5] - 2026-02-18
+### Fixed
+- Improved package resolution by adding an `index.js` entry point and modern `exports` configuration.
+- Fixed "Cannot find module" errors in TypeScript by adding explicit module declarations in `index.d.ts`.
+- Included `reset.min.css` in the package exports for direct sub-path access.
 
 ## [1.0.4] - 2026-02-18
 ### Added
